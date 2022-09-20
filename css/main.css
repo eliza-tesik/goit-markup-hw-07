@@ -380,6 +380,11 @@ body {
   color: var(--accent-color);
 }
 
+.contact-form__btn {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
 .subscribe-form__input {
   display: inline-block;
   width: 358px;
