@@ -299,6 +299,7 @@ button {
 
 .qualities-subtitle {
   margin-bottom: 10px;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);

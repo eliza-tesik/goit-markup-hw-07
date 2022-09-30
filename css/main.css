@@ -290,7 +290,7 @@ body {
 .contact-form__input:focus + .contact-form__input-icon {
   fill: var(--accent-color);
 }
-.contact-form:focus-within .contact-form__input-icon, .contact-form:hover .contact-form__input-icon {
+.contact-form__input-wrapper:focus-within .contact-form__input-icon, .contact-form__input-wrapper:hover .contact-form__input-icon {
   fill: var(--accent-color-hover);
 }
 
@@ -306,7 +306,7 @@ body {
   outline: none;
   border-color: var(--accent-color);
 }
-.contact-form:focus-within .contact-form__input, .contact-form:hover .contact-form__input {
+.contact-form__input-wrapper:focus-within .contact-form__input, .contact-form__input-wrapper:hover .contact-form__input {
   border: 1px solid var(--accent-color-hover);
 }
 
@@ -322,6 +322,9 @@ body {
 .contact-form__message:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.contact-form__message:focus-within, .contact-form__message:hover {
+  border: 1px solid var(--accent-color-hover);
 }
 .contact-form__message::placeholder {
   font-weight: 400;
@@ -552,6 +555,7 @@ body {
 
 .qualities__subtitle {
   margin-bottom: 10px;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);

@@ -40,8 +40,8 @@
     fill: var(--accent-color);
   }
 
-  .contact-form:focus-within &,
-  .contact-form:hover & {
+  .contact-form__input-wrapper:focus-within &,
+  .contact-form__input-wrapper:hover & {
     fill: var(--accent-color-hover);
   }
 }
@@ -59,8 +59,8 @@
     border-color: var(--accent-color);
   }
 
-  .contact-form:focus-within &,
-  .contact-form:hover & {
+  .contact-form__input-wrapper:focus-within &,
+  .contact-form__input-wrapper:hover & {
     border: 1px solid var(--accent-color-hover);
   }
 }
@@ -77,6 +77,11 @@
   &:focus {
     outline: none;
     border-color: var(--accent-color);
+  }
+
+  &:focus-within,
+  &:hover {
+    border: 1px solid var(--accent-color-hover);
   }
 
   &::placeholder {
